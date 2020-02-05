@@ -24,3 +24,13 @@ function myFirstFunction() {
     var result=str.fontcolor("green");
     document.getElementById("Green_text").innerHTML=result;
 }
+
+
+
+function mouseOver() {
+    document.getElementById("Green_text").style.background="blue";
+}
+
+function mouseOut() {
+    document.getElementById("Green_text").style.background="red";
+}
