@@ -7,7 +7,6 @@ function mouseOut() {
     document.getElementById("btn1").style.background="red";
 }
 
-
 var c=false;
 function clickMe() {
     if(c==false) {
