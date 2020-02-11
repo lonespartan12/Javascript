@@ -33,3 +33,12 @@ document.write(a===b);
 x=89;
 y=10;
 document.write(x===y);
+
+x=10;
+y=10;
+a=5;
+b=7
+document.write(a<b&&x==y);
+document.write(a>b&&x==y);
+document.write(a>b||x==y);
+document.write(a>b||x>y);
