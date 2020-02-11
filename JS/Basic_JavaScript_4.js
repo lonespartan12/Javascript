@@ -7,5 +7,6 @@ function myDictionary() {
         sound:"Bark!",
         sound:"kraB!"
     };
+    delete Animal.sound;
     document.getElementById("Dictionary").innerHTML=Animal.sound;
 }
