@@ -36,7 +36,7 @@ function valve(pwrOn,pos,flt) {
     this.fault=flt;
 }
 
-var xv201 = new valve("on","Open","not faulted");
+var xv201 = new valve("on","Open",long);
 var xv301 = new valve("off","open","faulted");
 var xv401 = new valve("on","closed","faulted");
 
