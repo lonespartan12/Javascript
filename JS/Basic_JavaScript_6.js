@@ -36,11 +36,18 @@ function valve(pwrOn,pos,flt) {
     this.fault=flt;
 }
 
-var xv201 = new valve("on","Open",long);
+var xv201 = new valve("on","Open","not faulted");
 var xv301 = new valve("off","open","faulted");
 var xv401 = new valve("on","closed","faulted");
 
 function vlvStatus() {
     document.getElementById("New_and_This").innerHTML = "valve xv201 is turned " + 
     xv201.energized + " and in the " + xv201.position + " position and is " + xv201.fault;
+}
+
+function Person(first,last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
 }
