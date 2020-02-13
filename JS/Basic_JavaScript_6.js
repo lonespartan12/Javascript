@@ -51,3 +51,15 @@ function Person(first,last, age, eye) {
     this.age = age;
     this.eyeColor = eye;
 }
+
+function countFunction() {
+    document.getElementById("NestedFunction").innerHTML = count();
+    function count() {
+        var startingPoint = 9;
+        function plusOne() {
+            startingPoint += 1;
+        }
+        plusOne();
+        return startingPoint;
+    }
+}
