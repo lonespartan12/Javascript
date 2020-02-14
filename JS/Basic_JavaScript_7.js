@@ -55,3 +55,18 @@ function ageFunct() {
     }
     document.getElementById("how_old").innerHTML=vote;
 }
+
+function timeFunct() {
+    var time = new Date().getHours();
+    var reply;
+    if (time < 12 == time > 0) {
+        reply="Good morning!";
+    }
+    else if (time > 12 == time < 18) {
+        reply = "Good afternoon!";
+    }
+    else {
+        reply = "Good evening!";
+    }
+    document.getElementById("time_of_day").innerHTML=reply;
+}
