@@ -44,3 +44,14 @@ function btnColor(){
     }
     
 }
+
+function ageFunct() {
+    age = document.getElementById("age").value;
+    if (age >= 18) {
+        vote="you can choose to save or destroy this place";
+    }
+    else{
+        vote="follow the others aimlessly into the abyss";
+    }
+    document.getElementById("how_old").innerHTML=vote;
+}
