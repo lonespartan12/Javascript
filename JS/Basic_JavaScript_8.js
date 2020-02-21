@@ -17,3 +17,9 @@ function upperTime() {
     var text = document.getElementById("upper").innerHTML;
     document.getElementById("upper").innerHTML=text.toUpperCase();
 }
+
+function findStuff() {
+    var str=document.getElementById("me").innerHTML;
+    var pos=str.search("you");
+    document.getElementById("findMe").innerHTML=pos;
+}
