@@ -12,3 +12,8 @@ function slice_Method() {
     var section = sentence.slice(27,33);
     document.getElementById("slice").innerHTML=section;
 }
+
+function upperTime() {
+    var text = document.getElementById("upper").innerHTML;
+    document.getElementById("upper").innerHTML=text.toUpperCase();
+}
