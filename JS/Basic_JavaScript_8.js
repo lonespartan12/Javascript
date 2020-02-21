@@ -23,3 +23,8 @@ function findStuff() {
     var pos=str.search("you");
     document.getElementById("findMe").innerHTML=pos;
 }
+
+function string_Method() {
+    var x=182;
+    document.getElementById("Num2String").innerHTML=x.toString();
+}
