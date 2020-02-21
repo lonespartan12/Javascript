@@ -28,3 +28,8 @@ function string_Method() {
     var x=182;
     document.getElementById("Num2String").innerHTML=x.toString();
 }
+
+function precision_Method() {
+    var x=12938.30202938475093282;
+    document.getElementById("precision").innerHTML=x.toPrecision(10);
+}
