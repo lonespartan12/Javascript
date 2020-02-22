@@ -39,3 +39,9 @@ function fxd() {
     var n = num.toFixed(3);
     document.getElementById("hola").innerHTML= n;
 }
+
+function primitive() {
+    var str="Poke it with a stick";
+    var res=str.valueOf();
+    document.getElementById("smash").innerHTML=res;
+}
