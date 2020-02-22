@@ -38,6 +38,9 @@ function constant_funct() {
     const musical_instrument = {type:"guitar", brand:"fender", color:"black"};
     musical_instrument.color="blue";
     musical_instrument.price="$900";
-    document.getElementById("constant").innerHTML="The cost of the " + musical_instrument.type+" was " + musical_instrument.price;
+    musical_instrument= {style:"accoustic"};
+    document.getElementById("constant").innerHTML="The cost of the " + 
+    musical_instrument.type+" was " + musical_instrument.price;
+    
 }
 
