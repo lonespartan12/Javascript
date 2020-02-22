@@ -54,3 +54,8 @@ function let_funct() {
     }
     document.write("<br>"+x);
 }
+
+function return_stuffs() {
+    return Math.PI;
+}
+document.getElementById("return").innerHTML=return_stuffs();
