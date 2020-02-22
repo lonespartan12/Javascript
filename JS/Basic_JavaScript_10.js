@@ -15,6 +15,7 @@ function for_loop(){
 
 function array_pics() {
     var picture = [];
+    var pics="";
     picture[0]="boat";
     picture[1]="ice";
     picture[2]="red";
@@ -25,5 +26,18 @@ function array_pics() {
     picture[7]="waterfall";
     picture[8]="fallwater";
     picture[9]="eagle";
-    document.getElementById("array_pics").innerHTML="in this picture there is a " + picture[6]+".";
+
+    for(i=0; i<picture.length; i++) {
+        pics += picture[i] + "<br>";
+        document.getElementById("array_pics").innerHTML="in this picture there is a " + picture[i]+".";
+    }
+    //document.getElementById("array_pics").innerHTML="in this picture there is a " + picture[pics]+".";
 }
+
+function constant_funct() {
+    const musical_instrument = {type:"guitar", brand:"fender", color:"black"};
+    musical_instrument.color="blue";
+    musical_instrument.price="$900";
+    document.getElementById("constant").innerHTML="The cost of the " + musical_instrument.type+" was " + musical_instrument.price;
+}
+
