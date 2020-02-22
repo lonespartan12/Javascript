@@ -33,3 +33,9 @@ function precision_Method() {
     var x=12938.30202938475093282;
     document.getElementById("precision").innerHTML=x.toPrecision(10);
 }
+
+function fxd() {
+    var num = 4.5887467589;
+    var n = num.toFixed(3);
+    document.getElementById("hola").innerHTML= n;
+}
