@@ -35,12 +35,13 @@ function array_pics() {
 }
 
 function constant_funct() {
-    const musical_instrument = {type:"guitar", brand:"fender", color:"black"};
+    const musical_instrument = {type:"guitar", brand:"fender", color:"black", 
+        sytle:"electric"};
     musical_instrument.color="blue";
     musical_instrument.price="$900";
-    musical_instrument= {style:"accoustic"};
+    //musical_instrument= {style:"accoustic"};
     document.getElementById("constant").innerHTML="The cost of the " + 
-    musical_instrument.type+" was " + musical_instrument.price;
-    
+    musical_instrument.sytle +" "+ musical_instrument.type + " was " +
+     musical_instrument.price;    
 }
 
