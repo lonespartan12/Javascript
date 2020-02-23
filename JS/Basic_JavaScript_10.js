@@ -80,3 +80,13 @@ function breakstuff(){
         document.getElementById("breakstuff").innerHTML=txt;
     }
 }
+
+function continueStuff(){
+    var txt="";
+    var i;
+    for (i=0; i<10; i++) {
+        if(i===3) {continue;}
+        txt += "The number is " + i + "<br>";
+        document.getElementById("breakContinue").innerHTML=txt;
+    }
+}
