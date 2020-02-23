@@ -70,3 +70,13 @@ let car={
     }
 };
 document.getElementById("car_object").innerHTML=car.description();
+
+function breakstuff(){
+    var txt="";
+    var i;
+    for (i=0; i<10; i++) {
+        if(i===3) {break;}
+        txt += "The number is " + i + "<br>";
+        document.getElementById("breakstuff").innerHTML=txt;
+    }
+}
