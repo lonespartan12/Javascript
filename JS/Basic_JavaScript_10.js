@@ -59,3 +59,14 @@ function return_stuffs() {
     return Math.PI;
 }
 document.getElementById("return").innerHTML=return_stuffs();
+
+let car={
+    make: "Dodge ",
+    model: "Viper ",
+    year: "2021 ",
+    color: "red ",
+    description: function() {
+        return "The car is a " + this.year + this.color + this.make + this.model;
+    }
+};
+document.getElementById("car_object").innerHTML=car.description();
