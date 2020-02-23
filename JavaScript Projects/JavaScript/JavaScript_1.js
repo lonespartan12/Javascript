@@ -26,3 +26,8 @@ function ranger() {
     }
     document.getElementById("output").innerHTML=favorite_ranger;
 }
+
+function Hello_World_Function() {
+    var A = document.getElementsByClassName("click");
+    A[0].innerHTML="The text has changed!";
+}
