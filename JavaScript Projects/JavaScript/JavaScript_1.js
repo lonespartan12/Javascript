@@ -41,3 +41,4 @@ function gradient() {
     ctx.fillStyle=grd;
     ctx.fillRect(20,20,150,100);
 }
+
