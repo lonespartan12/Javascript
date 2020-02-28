@@ -1,3 +1,4 @@
+
 // This function will get fired once the DOM is loaded.
 // Disable the stop button since it is not needed until game start.
 window.onload = function() {watch()};

@@ -131,8 +131,11 @@
                 <div class="displayBox boxRight">
                     <strong>Configuration:</strong><br><br>
                     <label1>Player 1: </label1><select id="player1"><option value="X">X</option><option value="O">O</option></select><br>
-                    <label1>Player 2: </label1><select id="player2"><option value="X">X</option><option value="O">O</option></select>
+                    <label1>Player 2: </label1><select id="player2"><option value="X">X</option><option value="O" selected="selected">O</option></select>
                     <button onclick="saveSettings()">Save Config</button>
+                </div>
+                <div id="controls">
+                    <button id=btnStop onclick="stopGame()">Stop Game</button>
                 </div>
             </div>
         </div>
