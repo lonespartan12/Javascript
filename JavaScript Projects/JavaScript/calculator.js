@@ -1,5 +1,7 @@
 // creates an object to keep track of values
 const Calculator = {
+    // this is displayes 0 on the screen
+    Display_Value: '0',
     //this will hold the first operand for any expressions, we set it to null for now
     First_Operand: null,
     // this checks whether or not the second operand has been input
@@ -48,25 +50,30 @@ function Handle_Operator(Next_Operator) {
     }
     if (First_Operand == null) {
         Calculator.First_Operand = Value_of_Input;
-    } else if (operator) {
-        // checks if an operator already exists
+    } else if (operator) { // checks if an operator already exists
         const Value_Now = First_Operand || 0;
         // if operator already exists, property lookup is performed for the operator
         // in the Perform_Calculation object and the function that matches the
         // operator is executed
         const result = Perform_Calculation[operator] (Value_Now, Value_of_Input);
 
-        Calculator.Display_Value = string(result);
-        Calculator.First_Operand = Next_Operator;
-    }    
+        Calculator.Display_Value = String(result);
+        Calculator.First_Operand = result;
+    }
+    Calculator.Wait_Second_Operand = true;
+    Calculator.operator = Next_Operator;
 }
 
 const Perform_Calculation = {
     '/': (First_Operand, Second_Operand) => First_Operand / Second_Operand,
+
     '*': (First_Operand, Second_Operand) => First_Operand * Second_Operand,
-    '-': (First_Operand, Second_Operand) => First_Operand - Second_Operand,
+
     '+': (First_Operand, Second_Operand) => First_Operand + Second_Operand,
-    '=': (First_Operand, Second_Operand) => Second_Operand
+
+    '-': (First_Operand, Second_Operand) => First_Operand - Second_Operand,
+
+    '=': (First_Operand, Second_Operand) => Second_Operand,
 };
 
 function Calculator_Reset() {
@@ -112,4 +119,4 @@ keys.addEventListener('click', (event) => {
 
     Input_Digit(target.value);
     Update_Display();
-})//this close paren is opened on line 88
+})//this close paren is opened on line 92
