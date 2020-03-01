@@ -5,7 +5,13 @@ document.write(n+"<br>");
 var instruments=["guitar", "drums", "piano", "bass", "violin", "trumpet", "flute"];
 var content="";
 var y;
-
+function call_loop() {
+    var i=0;
+    while (i<10) {        
+        document.write(i+"<br>");
+        i++;
+    }
+}
 function for_loop(){
     for(y=0; y<instruments.length; y++) {
         content += instruments[y] + "<br>";
