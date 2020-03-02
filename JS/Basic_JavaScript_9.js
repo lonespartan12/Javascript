@@ -43,3 +43,7 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 
 }
+
+$(function() {
+    $('body').removeClass('fade-out');
+});
